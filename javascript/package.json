@@ -14,7 +14,7 @@
   },
   "scripts": {
     "start": "babel-node index.js",
-    "test": "mocha --compilers js:babel-register"
+    "test": "mocha"
   },
   "author": "",
   "license": "ISC"
