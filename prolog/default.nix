@@ -1,7 +1,7 @@
 with import <nixpkgs> {};
 {
-    javaEnv = stdenv.mkDerivation {
-        name = "java-sandbox";
+    prologEnv = stdenv.mkDerivation {
+        name = "prolog-sandbox";
         buildInputs = [
             pkgs.swiProlog
         ];
