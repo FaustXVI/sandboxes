@@ -1,5 +1,3 @@
 package sandbox
 
-public fun get42(): Int {
-    return 42
-}
+fun get42(): Int = 42
