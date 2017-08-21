@@ -14,7 +14,7 @@
   },
   "scripts": {
     "start": "babel-node index.js",
-    "test": "mocha"
+    "test": "mocha --watch"
   },
   "author": "",
   "license": "ISC"
