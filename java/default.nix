@@ -1,11 +1,14 @@
 with import <nixpkgs> {};
-{
-    javaEnv = stdenv.mkDerivation {
+let
+    jdk9 = openjdk9;
+    mvn = maven.override { jdk = jdk9; };
+in
+stdenv.mkDerivation {
         name = "java-sandbox";
+        JAVA_HOME="${jdk9}/lib/openjdk";
         buildInputs = [
-            pkgs.openjdk
-                pkgs.maven
-                pkgs.gradle
+                jdk9
+                mvn
+                gradle
         ];
-    };
-}
+    }
