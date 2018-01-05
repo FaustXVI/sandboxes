@@ -1,9 +1,7 @@
 with import <nixpkgs> {};
-{
-    javaEnv = stdenv.mkDerivation {
-        name = "java-sandbox";
-        buildInputs = [
-            pkgs.elmPackages.elm
-        ];
-    };
+stdenv.mkDerivation {
+    name = "elm-sandbox";
+    buildInputs = [
+        pkgs.elmPackages.elm
+    ];
 }
