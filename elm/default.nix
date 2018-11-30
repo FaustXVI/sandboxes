@@ -18,7 +18,7 @@ in stdenv.mkDerivation {
             --debug \
             --set-interpreter ${my-glibc}/lib/ld-linux-x86-64.so.2 \
             --set-rpath "${builtins.concatStringsSep ":" (map (l: "${l}/lib") [my-gcc my-gmp my-glibc])}" \
-            node_modules/elm-test/bin/elm-interface-to-json
+            node_modules/elmi-to-json/unpacked_bin/elmi-to-json
         '';
 
 }
