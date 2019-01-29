@@ -11,7 +11,9 @@
     "babel-register": "^6.18.0",
     "chai": "^3.5.0",
     "cypress": "^3.0.3",
-    "mocha": "^5.2.0"
+    "fs": "0.0.1-security",
+    "mocha": "^5.2.0",
+    "tmp": "0.0.33"
   },
   "scripts": {
     "start": "babel-node index.js",
