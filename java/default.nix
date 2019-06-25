@@ -1,12 +1,13 @@
 with import <nixpkgs> {};
 let
-    mvn = maven.override { jdk = jdk11; };
+    jdk = jdk11;
+    mvn = maven.override { jdk  = jdk; };
 in
 stdenv.mkDerivation {
         name = "java-sandbox";
-        JAVA_HOME="${jdk11}/lib/openjdk";
+        JAVA_HOME="${jdk}/lib/openjdk";
         buildInputs = [
-                jdk11
+                jdk
                 mvn
                 gradle
         ];
