@@ -5,13 +5,20 @@
   "main": "transducers.js",
   "dependencies": {},
   "devDependencies": {
-    "babel-cli": "^6.18.0",
-    "babel-preset-es2015": "^6.18.0",
-    "babel-preset-stage-2": "^6.18.0",
-    "babel-register": "^6.18.0",
-    "chai": "^3.5.0",
-    "cypress": "^3.0.3",
-    "mocha": "^3.1.2"
+    "@babel/core": "^7.4.5",
+    "@stryker-mutator/babel-transpiler": "^2.0.0",
+    "@stryker-mutator/core": "^2.0.0",
+    "@stryker-mutator/html-reporter": "^2.0.0",
+    "@stryker-mutator/javascript-mutator": "^2.0.0",
+    "@stryker-mutator/mocha-framework": "^2.0.0",
+    "@stryker-mutator/mocha-runner": "^2.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4",
+    "npm-check-updates": "^3.1.11"
   },
   "scripts": {
     "start": "babel-node index.js",

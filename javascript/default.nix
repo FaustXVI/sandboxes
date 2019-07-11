@@ -39,7 +39,7 @@ in stdenv.mkDerivation {
   name = "javascript-sandbox";
   CYPRESS_CACHE_FOLDER = ".cypress";
   buildInputs = [
-    pkgs.nodejs-8_x
+    pkgs.nodejs-12_x
   ];
     shellHook = ''
         export PATH="$PATH:$(pwd)/node_modules/.bin"
