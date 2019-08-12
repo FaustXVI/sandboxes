@@ -1,13 +1,11 @@
 with import <nixpkgs> {};
+let
+  ghc = haskellPackages.ghcWithPackages (pkgs: with pkgs; [hspec]);
+in
 stdenv.mkDerivation {
-    name = "java-sandbox";
+    name = "haskell-sandbox";
     buildInputs = [
-        pkgs.ghc
-            pkgs.cabal-install
+        ghc
     ];
-    buildPhase =''
-        cabal update
-        cabal install hspec
-    '';
 }
 
