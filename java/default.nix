@@ -1,6 +1,6 @@
 with import <nixpkgs> {};
 let
-    jdk = jdk11;
+    jdk = openjdk12;
     mvn = maven.override { jdk  = jdk; };
 in
 stdenv.mkDerivation {
@@ -9,6 +9,5 @@ stdenv.mkDerivation {
         buildInputs = [
                 jdk
                 mvn
-                gradle
         ];
     }
