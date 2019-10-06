@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "main": "transducers.js",
-  "dependencies": {},
+  "dependencies": {
+  },
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@stryker-mutator/babel-transpiler": "^2.0.0",
